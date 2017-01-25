@@ -22,6 +22,8 @@ class SecondViewController: UIViewController {
             return
         }
         self.delegate?.didSelectInput(input: input)
+        
+        // popViewController navigates back to the previous viewController. You can either tab on Back button in navigation bar.
         navigationController?.popViewController(animated: true)
     }
     
